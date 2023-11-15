@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(../images/main.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Menu (nav) + logo */
+.logo {
+    height: 6rem;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 10px 20px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu ul li a {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+    
+    padding: 0 20px;
+    display: block;
+}
+
+/* Barevný (Colour) */
+.menu a:hover,
+.menu a:active {
+    color: orange;
+    transition: all 0.7s;
+}
+
+
+/* Hamburger menu */
+.openMenu,
+.closeMenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+
+.openMenu {
+    padding: 15px;
+}
+
+
+/* Submenu */
+.menu ul li:hover .subMenu {
+    display: block;
+}
+
+.menu .subMenu {
+    display: none;
+    position: relative;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.menu .subMenu li {
+    display: block;
+}
+
+
+/* subMenuSecond - druhý */
+.subMenuSecond {
+    position: absolute;
+    display: block;
+    padding: 20px 0;
+}
+
+.subMenuSecond li {
+    padding: 8px 0;
+}
+
+
+/* Middle - main */
+main {
+    flex-grow: 1;
+    color: white;
+
+    margin-top: 130px;
+    padding: 0 25px;
+}
+
+main a {
+    color: white;
+}
+
+.mainText {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main p {
+    padding:  15px 0;
+    font-size: 18px;
+}
+
+/* Picture - obrázky */
+.middlePicture {
+    text-align: center;
+}
+
+.middlePicture img {
+    height: 15rem;
+}
+
+
+.row {
+    display: flex;
+}
+
+.foto-all .col {
+    flex: 1 0 30%;
+    margin-bottom: 20px;
+    padding: 8px;
+}
+
+.foto-all img {
+    width: 100%;
+    height: 18em;
+    border-radius: 15px;
+    box-shadow: 4px 6px 10px black;
+}
+
+
+/* Footer - patička */
+footer {
+    color: white;
+    text-align: center;
+}
